@@ -1,0 +1,9 @@
+<table>
+  <% @marvel_characters.each do |marvel_character| %>
+    <tr>
+      <td><%= link_to marvel_character.name, marvel_character_path(marvel_character) %></td>
+      <td><%= button_to 'Edit', edit_marvel_character_path(marvel_character), method: 'get'%></td>
+      <td><%= button_to 'Remove', marvel_character_path(marvel_character), method: 'delete', data: { confirm: 'Are you sure?' } %></td>
+  <% end %>
+</table>
+<%= link_to "Add a New Marvel Character", new_marvel_character_path %>

@@ -1,0 +1,10 @@
+<h3>Create a Marvel Character</h3>
+<%= form_with model: @marvel_character do |form| %>
+  <%= form.text_field :name, placeholder: "name" %>
+  <%= form.submit %>
+<% end %>
+
+<!-- <%= form_for @marvel_character do |form| %>
+  <%= form.text_field :name, placeholder: 'name' %>
+  <%= form.submit %>
+<% end %> -->

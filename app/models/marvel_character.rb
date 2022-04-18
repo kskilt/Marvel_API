@@ -1,0 +1,3 @@
+class MarvelCharacter < ApplicationRecord
+
+end
